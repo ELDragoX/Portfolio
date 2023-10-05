@@ -1,0 +1,208 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+:root{
+  --web-bg:black;
+  --nav-link:white;
+  --nav-linkhover:black;
+  --nav-bg:rgb(108, 10, 10);
+  --contact-txt:rgb(238, 80, 80);
+  --project-txt:rgb(255, 187, 0);
+  --project-title-bg:black;
+  --welcome-txt1:red;
+  --welcome-txt2:white;
+  --button-txt:black;
+  --button-hover:black;
+  --button:orange;
+  --button-hovertxt:white;
+  --welcome-bg:rgb(39, 39, 38);
+  --project-bg:black;
+  --contact-bg:rgb(26, 0, 26);
+  --product-button-bg:rgb(247, 93, 37);
+  --product-button-bg-hover:black;
+  --product-button-txt:black;
+  --product-button-txt-hover:white;
+}
+@media screen and (max-width:100px) {
+  p {
+    color: black;
+  }
+}
+
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  background-color:var(--web-bg);
+  
+}
+
+header{
+width:100%;
+height:50px;
+background-color:var(--nav-bg);
+position:fixed;
+top:0;
+z-index:10;
+border-bottom:1px solid white;
+}
+
+section{
+  box-sizing:border-box;
+  height:auto;
+}
+#welcome-section{
+  padding:25% 0;
+  text-align:center;
+  background-color:var(--welcome-bg);
+  
+}
+#projects{
+padding-top:55px;
+text-align:center;
+background-color:var(--project-bg);
+min-height:100%;
+display:flex;
+flex-flow:column wrap;
+justify-content:center;
+}
+#contact{
+  padding:25% 1%;
+  text-align:center;
+  background-color:var(--contact-bg);
+
+}
+
+a.navlink{
+  color: var(--nav-link);
+  font-size:20px;
+  font-family:Prosto One,sans-serif;
+  text-decoration:none;
+  
+}
+
+.navlinks{
+  background-color:var(--nav-bg);
+  position:fixed;
+  right:10;
+  
+}
+.navlinks li{
+  display:inline-block;
+  padding: 0px 20px;
+  list-style:none;
+  background-color:var(--nav-bg);
+  
+}
+
+.navlink{
+  transition:all 0.3s ease 0s;
+  background-color:var(--nav-bg);
+  
+}
+.navlink:hover{
+  color:var(--nav-linkhover);
+  
+}
+.contact-block{
+  background-color:var(--contact-bg);
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+}
+a.btn{
+  background-color:var(--button);
+  color:var(--button-txt);
+  transition:all 0.1s ease 0s;
+}
+.fa{
+background-color:var(--button);
+transition:all 0.1s ease 0s;
+}
+a.btn:hover .fa{
+  background-color:var(--button-hover); 
+}
+a.btn:hover{
+  background-color:var(--button-hover);
+  color:var(--button-hovertxt); 
+}
+.contact-txt{
+  color:var(--contact-txt);
+  background-color:var(--contact-bg);
+  
+}
+
+.project-title{
+  color:var(--project-txt);
+  background-color:var(--project-title-bg);
+}
+.welcome-txt1{
+  color:var(--welcome-txt1);
+  background-color:var(--welcome-bg);
+}
+.welcome-txt2{
+  color:var(--welcome-txt2);
+  background-color:var(--welcome-bg);
+}
+a#profile-link{
+  color:violet;
+}
+
+.project-tile{
+  border:2px solid black;
+  height:200px;
+  width:200px;
+  margin:10px;
+  display:inline-flex;
+  flex-flow:row wrap;
+  justify-content:space-evenly;
+  transition:all 0.3s ease 0s;
+}
+.product-span{
+  color:var(--product-button-bg);
+  background-color:var(--product-button-bg);
+  transition:all 0.3s ease 0s;
+}
+.project-tile:hover{
+  opacity:75%;
+
+}
+.project-tile:hover button{
+  color:var(--product-button-txt-hover);
+  background-color:var(--product-button-bg-hover);
+  border: 2px solid white;
+
+}
+.project-tile:hover .product-span{
+  color:orange;
+  background-color:var(--product-button-bg-hover);
+}
+
+.desc{
+  background-color:var(--contact-bg);
+  color:white;
+}
+
+img{
+  width:200px;
+  height:200px;
+}
+button {
+  border: none;
+  color: var(--product-button-txt);
+  background-color:var(--product-button-bg);
+  padding: 16px 32px;
+  width:200px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  transition:all 0.3s ease 0s;
+}
